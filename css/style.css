@@ -86,3 +86,7 @@ body {
   letter-spacing: 0.5px;
   padding: 10px;
 }
+
+.footer__css {
+  background-color: #1f1f1f;
+}
