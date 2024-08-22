@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Mulish:wght@300&family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans" sans-serif;
+}
+
+.container {
+  max-width: 60% !important;
+}
+
+/* Container for navbar and banner */
+.navbar-banner-container {
+  background-image: url("../images/home/slider-paint.jpg"); /* Single background image for both navbar and banner */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+.navbar {
+  background: transparent; /* Make the navbar transparent to show the background image */
+  color: #ffffff; /* Text color for the navbar */
+}
+
+/* Banner styles */
+.banner {
+  height: 250px; /* Height of the banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.banner p {
+  font-size: 1.25rem;
+}
+
+.banner .btn {
+  margin-top: 20px;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Banner styles */
+.banner {
+  padding: 60px 0;
+}
+
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.banner-text {
+  flex: 1;
+  width: 40px;
+}
+
+.banner-text h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px;
+  width: 370px;
+}
+
+.banner-text p {
+  font-size: 13px;
+  width: 470px;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
