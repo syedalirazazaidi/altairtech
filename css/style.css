@@ -13,10 +13,11 @@
 
 /* Container for navbar and banner */
 .navbar-banner-container {
-  background-image: url("../images/home/slider-paint.jpg"); /* Single background image for both navbar and banner */
+  background-image: url("../images/home/slider-paint.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: background-image 2s ease-in-out;
 }
 
 /* Navbar styles */
@@ -46,13 +47,6 @@
 
 .banner .btn {
   margin-top: 20px;
-}
-
-/* General styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 /* Banner styles */
@@ -87,6 +81,6 @@ body {
   padding: 10px;
 }
 
-.footer__css{
-  background-color: #1F1F1F;
+.footer__css {
+  background-color: #1f1f1f;
 }

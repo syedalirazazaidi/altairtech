@@ -384,5 +384,27 @@
         </section>
       </footer>
     </div>
+    <script>
+const images = [
+    "../images/home/slider-paint.jpg",
+    "../images/home/slider-darts.jpg",
+    "../images/home/slider-blueprint.jpg",
+    "../images/home/slider-phone2.jpg",
+    "../images/home/slider-portal.jpg",
+    "../images/home/slider-sketch.jpg"
+
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+    const container = document.querySelector('.navbar-banner-container');
+    container.style.backgroundImage = `url(${images[currentIndex]})`;
+    currentIndex = (currentIndex + 1) % images.length; 
+}
+
+setInterval(changeBackground, 4000);
+
+    </script>
   </body>
 </html>
