@@ -8,7 +8,9 @@
 }
 
 .container {
-  max-width: 50% !important;
+  max-width: 51% !important;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 /* Container for navbar and banner */
