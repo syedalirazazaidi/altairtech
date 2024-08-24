@@ -13,7 +13,7 @@
 
 <body>
   <div>
-    <div class="navbar-banner-container" style="padding-top: 20px">
+    <div class="navbar-banner-container">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -25,9 +25,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto" style="z-index: 1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Why Altair?</a>
+                <a class="nav-link active" aria-current="page" href="#" style="width: 100px">Why Altair?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
@@ -50,21 +50,65 @@
       </nav>
 
       <!-- Banner Section -->
-      <section class="banner">
-        <div class="container">
-          <div class="banner-content">
+      <section class="">
+        <div class="">
+          <div class="">
             <div class="banner-text">
-              <h1>Digital Creative
-              </h1>
+              <div>
+                <div style="
+                      margin-top: -85px;
+                      height: 370px;
+                      width: 100vw;
+                      background-repeat: no-repeat;
+                      position: relative;
+                      background-position-x: center;
+                    " class="altairtech_group">
+                  <div class="container altairtech_content" style="padding-top: 140px">
+                    <h2 id="dynamic-title" style="color: #ffffff; font-weight: 300; width: 400px"></h2>
+                    <p id="dynamic-content" style="
+                          color: #ffffff;
+                          font-weight: 300;
+                          width: 450px;
+                          letter-spacing: -0.3px;
+                        "></p>
+                  </div>
 
-              <p>
-                Creatively transforming business objectives online to turn heads and get results. Moving the message
-                forward in collaterals, signage, and promotional materials.
-              </p>
+                  <!-- <div class="container" style="padding-top: 140px">
+                      <h2 style="color: #ffffff; font-weight: 300">
+                        Digital Creative
+                      </h2>
+
+                      <p
+                        style="
+                          color: #ffffff;
+                          font-weight: 300;
+                          width: 500px;
+                          letter-spacing: -0.3px;
+                        "
+                      >
+                        Creatively transforming business objectives online to
+                        turn heads and get results. Moving the message forward
+                        in collaterals, signage, and promotional materials.
+                      </p>
+                    </div> -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+    <div class="container mt-5" style="position: absolute; top: 260px">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div class="circle mx-1"></div>
+          <div class="circle mx-1"></div>
+          <div class="circle mx-1"></div>
+          <div class="circle mx-1"></div>
+          <div class="circle mx-1"></div>
+          <div class="circle mx-1"></div>
+        </div>
+      </div>
     </div>
     <!-- Design and branding -->
 
@@ -73,27 +117,45 @@
         <div class="col-sm-6 col-md-4 mt-4">
           <div class="thumbnail">
             <div class="caption">
-              <h5 style="color: #0066d6; font-family: 'Open Sans', sans-serif; line-height: 24px;
-                margin-bottom: 5px">Design & Branding</h5>
+              <h5 style="
+                    color: #0066d6;
+                    font-family: 'Open Sans', sans-serif;
+                    line-height: 24px;
+                    margin-bottom: 5px;
+                  ">
+                Design & Branding
+              </h5>
 
               <div>
-                <p style="font-size: 12px; letter-spacing: 1px;">
-                <div>
-                  <div style="display: flex;gap: 4px;">
-                    <div>
-                      <img class="rodriguez__group" src="./images/home/homepage-icon01.png" alt="logo" />
+                <div style="font-size: 12px; letter-spacing: 1px">
+                  <div>
+                    <div style="display: flex; gap: 4px">
+                      <div>
+                        <img class="rodriguez__group" src="./images/home/homepage-icon01.png" alt="logo" />
+                      </div>
+                      <p style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            font-family: Arial;
+                          ">
+                        At Altair we build your logo, brand identity, and
+                        design on concepts as
+                      </p>
                     </div>
-                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; font-family: Arial;">
-                      At Altair we build your logo, brand identity, and design on concepts as
+                    <p style="
+                          font-size: 14px;
+                          margin-top: -12px;
+                          font-weight: 400;
+                          line-height: 24px;
+                          font-family: Arial;
+                        ">
+                      unique as your business. Whether you want an adjustment,
+                      or a whole new face, we have the tools and skills to
+                      create and develop your brand strategy.
                     </p>
                   </div>
-                  <p
-                    style="font-size: 14px; margin-top: -12px; font-weight: 400; line-height: 24px; font-family: Arial;">
-                    unique as your business. Whether you want an adjustment, or a whole new face, we have the tools and
-                    skills to create and develop your brand strategy.
-                  </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -104,28 +166,42 @@
               <h5 style="color: #0066d6">Health & Medical Services</h5>
 
               <div>
-                <p style="font-size: 12px; letter-spacing: 1px;">
-                <div>
-                  <div style="display: flex;gap: 4px;">
-                    <div>
-                      <img class="rodriguez__group" src="images/home/homepage-icon02.png" alt="logo" />
+                <div style="font-size: 12px; letter-spacing: 1px">
+                  <div>
+                    <div style="display: flex; gap: 4px">
+                      <div>
+                        <img class="rodriguez__group" src="images/home/homepage-icon02.png" alt="logo" />
+                      </div>
+                      <p style="
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            font-family: Arial;
+                          ">
+                        Altair has substantial expertise building, deploying
+                        and supporting health
+                      </p>
                     </div>
-                    <p style="font-size: 14px; font-weight: 400; line-height: 24px; font-family: Arial;">
-                      Altair has substantial expertise building, deploying and supporting health
+                    <p style="
+                          font-size: 14px;
+                          margin-top: -12px;
+                          font-weight: 400;
+                          line-height: 24px;
+                          font-family: Arial;
+                        ">
+                      applications. With over 300 health industry clients our
+                      experience includes interfaces to over 100 Electronic
+                      Health Record systems, over 500 medical device
+                      interfaces and the design, develop and deploy of 100s of
+                      medical software projects.
+                      <br />
+                      <br />
+                      Altair's experience and expertise in the health industry
+                      ensures that your medical IT project will fully comply
+                      with CLIA, HIPAA, PHI and other regulatory requirements.
                     </p>
                   </div>
-                  <p
-                    style="font-size: 14px; margin-top: -12px; font-weight: 400; line-height: 24px; font-family: Arial;">
-                    applications. With over 300 health industry clients our experience includes interfaces to over 100
-                    Electronic Health Record systems, over 500 medical device interfaces and the design, develop and
-                    deploy of 100s of medical software projects.
-                    <br>
-                    <br>
-                    Altair's experience and expertise in the health industry ensures that your medical IT project will
-                    fully comply with CLIA, HIPAA, PHI and other regulatory requirements.
-                  </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -136,24 +212,32 @@
               <h5 style="color: #0066d6">Is your business mobilized?</h5>
 
               <div>
-                <p style="font-size: 12px; letter-spacing: 1px">
-                <div>
-                  <div style="display: flex;gap: 4px;">
-                    <div>
-                      <img class="rodriguez__group" src="./images/home/homepage-icon04.png" alt="logo" />
+                <div style="font-size: 12px; letter-spacing: 1px">
+                  <div>
+                    <div style="display: flex; gap: 4px">
+                      <div>
+                        <img class="rodriguez__group" src="./images/home/homepage-icon04.png" alt="logo" />
+                      </div>
+                      <p style="font-size: 14px">
+                        Mobile devices have passed up the desktop as means of
+                        interacting with the
+                      </p>
                     </div>
-                    <p style="font-size: 14px;">
-                      Mobile devices have passed up the desktop as means of interacting with the
+                    <p style="
+                          font-size: 14px;
+                          margin-top: -12px;
+                          font-weight: 400;
+                          line-height: 24px;
+                          font-family: Arial;
+                        ">
+                      internet for many products and services. Is your
+                      business mobile ready? Whether you are looking for a
+                      mobile website or mobile app we can make sure your
+                      business is on the leading edge of this technology
+                      trend.
                     </p>
                   </div>
-                  <p
-                    style="font-size: 14px; margin-top: -12px; font-weight: 400; line-height: 24px; font-family: Arial;">
-                    internet for many products and services. Is your business mobile ready? Whether you are looking for
-                    a mobile website or mobile app we can make sure your business is on the leading edge of this
-                    technology trend.
-                  </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -164,22 +248,24 @@
               <h5 style="color: #0066d6">Website Design & Development</h5>
 
               <div>
-                <p style="font-size: 12px; letter-spacing: 1px">
-                <div>
-                  <div style="display: flex;gap: 4px;">
-                    <div>
-                      <img class="rodriguez__group" src="./images/home/homepage-icon02.png" alt="logo" />
+                <div style="font-size: 12px; letter-spacing: 1px">
+                  <div>
+                    <div style="display: flex; gap: 4px">
+                      <div>
+                        <img class="rodriguez__group" src="./images/home/homepage-icon02.png" alt="logo" />
+                      </div>
+                      <p style="font-size: 14px">
+                        Custom website design & development with your ‘look’
+                        and the functionality you
+                      </p>
                     </div>
-                    <p style="font-size: 14px;">
-                      Custom website design & development with your ‘look’ and the functionality you
+                    <p style="font-size: 14px; margin-top: -12px">
+                      seek. Whether this is your first website, or time for a
+                      redesign, we create options based on your requirements
+                      to execute on time and on budget.
                     </p>
                   </div>
-                  <p style="font-size: 14px; margin-top: -12px;">
-                    seek. Whether this is your first website, or time for a redesign, we create options based on your
-                    requirements to execute on time and on budget.
-                  </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -278,20 +364,20 @@
                   <a class="link-secondary text-decoration-none" style="font-size: 13px" href="tel:+15057922430">ACE</a>
                 </p>
                 <p style="margin-bottom: -2px">
-                  <a class="link-secondary text-decoration-none" style="font-size: 13px"
-                    href="tel:+15057922430">Point of Sale</a>
+                  <a class="link-secondary text-decoration-none" style="font-size: 13px" href="tel:+15057922430">Point
+                    of Sale</a>
                 </p>
                 <p style="margin-bottom: -2px">
-                  <a class="link-secondary text-decoration-none" style="font-size: 13px"
-                    href="tel:+15057922430">Member Manager</a>
+                  <a class="link-secondary text-decoration-none" style="font-size: 13px" href="tel:+15057922430">Member
+                    Manager</a>
                 </p>
                 <p style="margin-bottom: -2px">
-                  <a class="link-secondary text-decoration-none" style="font-size: 13px"
-                    href="tel:+15057922430">Online Learning</a>
+                  <a class="link-secondary text-decoration-none" style="font-size: 13px" href="tel:+15057922430">Online
+                    Learning</a>
                 </p>
                 <p style="margin-bottom: -2px">
-                  <a class="link-secondary text-decoration-none" style="font-size: 13px" 
-                  href="tel:+15057922430">Event Calendar</a>
+                  <a class="link-secondary text-decoration-none" style="font-size: 13px" href="tel:+15057922430">Event
+                    Calendar</a>
                 </p>
               </div>
             </div>
@@ -301,8 +387,8 @@
                   "I highly recommend Altair Technnology for any website
                   design or software development. They will live up to any
                   task, and more importantly, work for their clients with a
-                  level of respect, hard work and integrity that is very hardflkljnlnln
-                  to find."
+                  level of respect, hard work and integrity that is very
+                  hardflkljnlnln to find."
                 </p>
               </div>
             </div>
@@ -323,20 +409,85 @@
       "../images/home/slider-blueprint.jpg",
       "../images/home/slider-phone2.jpg",
       "../images/home/slider-portal.jpg",
-      "../images/home/slider-sketch.jpg"
-
+      "../images/home/slider-sketch.jpg",
     ];
 
+    const content = [
+      {
+        title: "Custom Website Design & Development Agency",
+        content:
+          "Since 1993, we partner with our clients to design, build and manage websites that generate higher sales and increase customer satisfaction.",
+      },
+      {
+        title: "Mobile Solutions.",
+        content:
+          "Mobile applications are more than games and novelties. To engage prospects and convert customers in an increasingly mobile environment, you must have a well-designed and executed mobile website and/or app.",
+      },
+      {
+        title: "Digital Creative",
+        content:
+          "Creatively transforming business objectives online to turn heads and get results. Moving the message forward in collaterals, signage, and promotional materials.",
+      },
+      {
+        title: "Internet Strategy & SEO",
+        content:
+          "Strength training for websites. Strategies to suit. Measurable results. Better search engine ranking.",
+      },
+      {
+        title: "Integrated Website Portals.",
+        content:
+          "Online access and integration to business operations. Sophisticated technology solutions customized for your business.",
+      },
+      {
+        title: "Branding & Marketing",
+        content:
+          "Impressions Count. Trust our skilled team with your reputation.",
+      },
+    ];
     let currentIndex = 0;
 
-    function changeBackground() {
-      const container = document.querySelector('.navbar-banner-container');
-      container.style.backgroundImage = `url(${images[currentIndex]})`;
-      currentIndex = (currentIndex + 1) % images.length;
+    function highlightCircles() {
+      const circles = document.querySelectorAll(".circle");
+
+      circles.forEach((circle) => {
+        circle.classList.remove("highlighted");
+      });
+
+      circles[currentIndex].classList.add("highlighted");
+
+      currentIndex = (currentIndex + 1) % circles.length;
     }
 
-    setInterval(changeBackground, 4000);
+    setInterval(highlightCircles, 5000);
 
+    let index = 0;
+
+    function changeContentAndBackground() {
+      const contentContainer = document.querySelector(".altairtech_content");
+      const bgContainer = document.querySelector(".altairtech_group");
+
+      contentContainer.classList.add("fade-out");
+      bgContainer.classList.add("fade-out");
+
+      setTimeout(() => {
+        const titleElement = document.getElementById("dynamic-title");
+        const contentElement = document.getElementById("dynamic-content");
+
+        titleElement.textContent = content[index].title;
+        contentElement.textContent = content[index].content;
+
+        bgContainer.style.backgroundImage = `url(${images[index]})`;
+
+        contentContainer.classList.remove("fade-out");
+        bgContainer.classList.remove("fade-out");
+
+        index = (index + 1) % content.length;
+      }, 5000);
+    }
+
+    setInterval(changeContentAndBackground, 5000);
+
+    changeContentAndBackground();
   </script>
 </body>
 
