@@ -13,8 +13,7 @@
 
 .elevation-4 {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 .navbar-banner-container {
   position: relative;
@@ -121,7 +120,6 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-
 .highlighted {
   background-color: #45a8e3;
 }
@@ -129,7 +127,6 @@
 .footer__css {
   background-color: #1f1f1f;
 }
-
 
 .card {
   background: #fff; /* White background for the card */
@@ -143,3 +140,47 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
 
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 750px; /* Same as the width in your HTML inline style */
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  gap: 40px;
+  display: flex;
+  padding: 10px; /* Optional: add padding to the content */
+}
+
+.slider-item img {
+  width: 230px; /* Adjust as needed */
+  height: 170px;
+}
+
+.slider-item h4 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.slider-item p {
+  max-width: 300px;
+  font-size: 13px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.circle.active {
+  background-color: #333;
+}

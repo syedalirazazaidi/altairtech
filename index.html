@@ -319,7 +319,7 @@
           </div>
         </div>
         <hr />
-        <div class="row" style="">
+        <div class="row gap-10" style="">
           <div
             class="col-sm-6 col-md-4 mt-4 d-inline-flex focus-ring text-decoration-none border rounded-2 card"
             style="height: 30px"
@@ -328,6 +328,24 @@
           </div>
 
           <div class="col-sm-6 col-md-8" style="margin-bottom: 50px">
+            <div class="slider-container">
+              <div class="slider-wrapper"></div>
+            </div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col d-flex justify-content-center">
+                  <div class="circle_slider mx-1"></div>
+                  <div class="circle_slider mx-1"></div>
+                  <div class="circle_slider mx-1"></div>
+                  <div class="circle_slider mx-1"></div>
+                  <div class="circle_slider mx-1"></div>
+                  <div class="circle_slider mx-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-sm-6 col-md-8" style="margin-bottom: 50px">
             <div
               style="
                 display: flex;
@@ -364,7 +382,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- footer start  -->
@@ -623,6 +641,102 @@
             "Impressions Count. Trust our skilled team with your reputation.",
         },
       ];
+
+      const bannerContent = [
+        {
+          image: "/images/home/BootstrapsImages/HomePage/homepf-ari.jpg",
+          title: "Carrera Races",
+          content:
+            "Carrerra Races, Inc is a premier race company focusing on creating awareness and opportunity for nonprofit organizations.",
+        },
+        {
+          image: "/images/home/BootstrapsImages/HomePage/HomePF-ALP.jpg",
+          title: "Amazing Life Photography",
+          content:
+            "San Antonio photographer launches her new website to showcase how she captures moments of this amazing thing we call life.",
+        },
+        {
+          image: "/images/home/BootstrapsImages/HomePage/homepf-ari.jpg",
+          title: "Texas Tag & Title",
+          content:
+            "Texas Tag & Title is the fast and easy solution to auto registration.",
+        },
+        {
+          image: "/images/home/BootstrapsImages/HomePage/homepf-ari.jpg",
+          title: "Port San Antonio",
+          content:
+            "Port SA chose the Altair Commerce Engine for its flexible Content Management System, robust features sets, integration capabilities, plug-in modules, and strong intranet components. The unveiling to the global user community is now in English and Spanish.",
+        },
+        {
+          image: "/images/home/BootstrapsImages/HomePage/homepf-ari.jpg",
+          title: "Center for Infrastructure Assurance and Security",
+          content:
+            "CIAS' training arm needed a platform to facilitate managing their online and other training throughout the USA on the back end.",
+        },
+        {
+          image: "/images/home/BootstrapsImages/HomePage/Homepf-ari.jpg",
+          title: "Arnold Refrigeration, Inc.",
+          content:
+            "ARI is your one stop source for commercial and convenience store refrigeration, industrial refrigeration and institutional foodservice equipment.",
+        },
+      ];
+
+      const sliderWrapper = document.querySelector(".slider-wrapper");
+      const circles = document.querySelectorAll(".circle");
+      let index_slider = 0;
+
+      function createSliderItems() {
+        sliderWrapper.innerHTML =
+          bannerContent
+            .map(
+              (item) => `
+    <div class="slider-item">
+      <img src="${item.image}" alt="${item.title}">
+      <div>
+        <h4>${item.title}</h4>
+        <p>${item.content}</p>
+      </div>
+    </div>
+  `
+            )
+            .join("") +
+          `
+    <div class="slider-item">
+      <img src="${bannerContent[0].image}" alt="${bannerContent[0].title}">
+      <div>
+        <h4>${bannerContent[0].title}</h4>
+        <p>${bannerContent[0].content}</p>
+      </div>
+    </div>
+  `;
+      }
+
+      function startSlider() {
+        createSliderItems();
+
+        const totalItems = bannerContent.length;
+
+        setInterval(() => {
+          index_slider++;
+          sliderWrapper.style.transition = "transform 1s ease-in-out";
+          sliderWrapper.style.transform = `translateX(-${index_slider * 100}%)`;
+
+          circles.forEach((circle, i) => {
+            circle.classList.toggle("active", i === index_slider % totalItems);
+          });
+
+          if (index_slider === totalItems) {
+            setTimeout(() => {
+              sliderWrapper.style.transition = "none";
+              sliderWrapper.style.transform = "translateX(0)";
+              index_slider = 0;
+            }, 1000);
+          }
+        }, 4000);
+      }
+
+      startSlider();
+
       let currentIndex = 0;
 
       function highlightCircles() {
