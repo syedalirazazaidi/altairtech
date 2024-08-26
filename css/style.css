@@ -116,7 +116,7 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #377bb0;
+  background-color: #284c6e;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -156,6 +156,10 @@
   gap: 40px;
   display: flex;
   padding: 10px; /* Optional: add padding to the content */
+}
+
+.circle_slider.active {
+  background-color: #007bff; /* Change to the desired highlight color */
 }
 
 .slider-item img {
