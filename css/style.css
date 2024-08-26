@@ -184,7 +184,36 @@
   border-radius: 50%;
   transition: background-color 0.3s;
 }
+/* Fade out animation */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Highlighted circle */
+.circle.highlighted {
+  background-color: #007bff; /* Change color as per your design */
+  border-color: #007bff; /* Change color as per your design */
+  box-shadow: 0 0 5px #007bff; /* Optional: to add a glowing effect */
+}
 
 .circle.active {
   background-color: #333;
 }
+.circle {
+  cursor: pointer;
+}
+
+/* Fade out animation */
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Highlighted circle */
+.circle.highlighted {
+  background-color: #007bff; /* Change color as per your design */
+  border-color: #007bff; /* Change color as per your design */
+  box-shadow: 0 0 5px #007bff; /* Optional: to add a glowing effect */
+}
+
