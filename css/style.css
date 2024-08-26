@@ -212,8 +212,7 @@
 
 /* Highlighted circle */
 .circle.highlighted {
-  background-color: #007bff; /* Change color as per your design */
-  border-color: #007bff; /* Change color as per your design */
-  box-shadow: 0 0 5px #007bff; /* Optional: to add a glowing effect */
+  background-color: #007bff; 
+  border-color: #007bff; 
+  box-shadow: 0 0 5px #007bff; 
 }
-
