@@ -11,13 +11,54 @@
   max-width: 60% !important;
 }
 .navbar-banner-container {
-    position: relative;
-    background-image: url("../images/home/BootstrapsImages/HomePage/content-wrapper.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-  }
+  position: relative;
+  background-image: url("../images/home/BootstrapsImages/HomePage/content-wrapper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
 .footer__css {
-    background-color: #1f1f1f;
-  }
-  
+  background-color: #1f1f1f;
+}
+.box {
+  width: 200px;
+  height: 120px;
+  background-color: #eff2f7;
+  position: relative;
+  color: #000;
+  padding: 10px;
+  border: 4px solid #e3e8f1;
+  border-radius: 15px;
+}
+
+.content {
+  text-align: left; /* Center text inside the box */
+}
+
+.content h4 {
+  font-size: 16px;
+  color: #0066cc;
+  letter-spacing: 0.4px;
+  margin: 0; /* Remove default margin */
+}
+.content_para{
+    margin-top: 20px;
+}
+.content_para h4 {
+  font-size: 16px;
+  color: #0066cc;
+  letter-spacing: 0.4px;
+  width: 200px;
+  margin: 0; /* Remove default margin */
+}
+
+.content p {
+  color: #0066cc;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.content_para p {
+  width: 200px;
+  font-size: 14px;
+  margin-top: 10px;
+}
