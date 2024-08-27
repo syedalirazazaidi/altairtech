@@ -45,7 +45,7 @@
               <ul class="navbar-nav ms-auto" style="z-index: 1">
                 <li class="nav-item">
                   <a
-                    class="nav-link "
+                    class="nav-link"
                     aria-current="page"
                     href="/altair.html"
                     style="width: 100px"
@@ -129,10 +129,13 @@
 
       <!-- -->
       <!-- Design and branding -->
-
       <div class="container">
         <div class="row mb-4" style="padding-bottom: 80px">
-          <div class="col-sm-6 col-md-4 mt-4">
+          <!-- Mobile Layout: Stack columns vertically -->
+          <!-- Large Screen Layout: Keep columns side by side -->
+
+          <!-- Design & Branding -->
+          <div class="col-12 col-md-4 mt-4">
             <div class="thumbnail">
               <div class="caption">
                 <h5
@@ -145,7 +148,6 @@
                 >
                   Design & Branding
                 </h5>
-
                 <div>
                   <div style="font-size: 12px; letter-spacing: 1px">
                     <div>
@@ -155,6 +157,7 @@
                             class="rodriguez__group"
                             src="./images/home/homepage-icon01.png"
                             alt="logo"
+                            style="width: 24px; height: 24px"
                           />
                         </div>
                         <p
@@ -188,11 +191,12 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mt-4">
+
+          <!-- Health & Medical Services -->
+          <div class="col-12 col-md-4 mt-4">
             <div class="thumbnail">
               <div class="caption">
                 <h5 style="color: #0066d6">Health & Medical Services</h5>
-
                 <div>
                   <div style="font-size: 12px; letter-spacing: 1px">
                     <div>
@@ -202,6 +206,7 @@
                             class="rodriguez__group"
                             src="images/home/homepage-icon02.png"
                             alt="logo"
+                            style="width: 24px; height: 24px"
                           />
                         </div>
                         <p
@@ -230,8 +235,7 @@
                         Health Record systems, over 500 medical device
                         interfaces and the design, develop and deploy of 100s of
                         medical software projects.
-                        <br />
-                        <br />
+                        <br /><br />
                         Altair's experience and expertise in the health industry
                         ensures that your medical IT project will fully comply
                         with CLIA, HIPAA, PHI and other regulatory requirements.
@@ -242,11 +246,12 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mt-4" style="position: relative">
+
+          <!-- Is your business mobilized? -->
+          <div class="col-12 col-md-4 mt-4" style="position: relative">
             <div class="thumbnail">
               <div class="caption">
                 <h5 style="color: #0066d6">Is your business mobilized?</h5>
-
                 <div>
                   <div style="font-size: 12px; letter-spacing: 1px">
                     <div>
@@ -256,6 +261,7 @@
                             class="rodriguez__group"
                             src="./images/home/homepage-icon04.png"
                             alt="logo"
+                            style="width: 24px; height: 24px"
                           />
                         </div>
                         <p style="font-size: 14px">
@@ -284,14 +290,15 @@
               </div>
             </div>
           </div>
+
+          <!-- Website Design & Development -->
           <div
-            class="col-sm-6 col-md-4"
+            class="col-12 col-md-4 mt-4 d-none d-md-block"
             style="position: absolute; top: 650px; width: 280px"
           >
             <div class="thumbnail">
               <div class="caption">
                 <h5 style="color: #0066d6">Website Design & Development</h5>
-
                 <div>
                   <div style="font-size: 12px; letter-spacing: 1px">
                     <div>
@@ -301,6 +308,7 @@
                             class="rodriguez__group"
                             src="./images/home/homepage-icon02.png"
                             alt="logo"
+                            style="width: 24px; height: 24px"
                           />
                         </div>
                         <p style="font-size: 14px">
@@ -321,15 +329,18 @@
           </div>
         </div>
         <hr />
-        <div class="row gap-10">
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Adjusted column classes for mobile view -->
           <div
-            class="col-sm-6 col-md-4 mt-4 d-inline-flex focus-ring text-decoration-none border rounded-2 card"
+            class="col-12 col-md-4 mt-4 d-inline-flex focus-ring text-decoration-none border rounded-2 card card_css__proposal"
             style="height: 30px"
           >
             <p style="text-decoration: underline">Request a Proposal</p>
           </div>
 
-          <div class="col-sm-6 col-md-8" style="margin-bottom: 50px">
+          <div class="col-12 col-md-8 mb-5">
             <div class="slider-container">
               <div class="slider-wrapper"></div>
             </div>
@@ -348,6 +359,8 @@
           </div>
         </div>
       </div>
+
+      <!--  -->
       <!-- footer start  -->
 
       <footer class="footer">
@@ -356,7 +369,7 @@
         >
           <div class="container overflow-hidden">
             <div class="row gy-4 gy-lg-0 justify-content-xl-between">
-              <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+              <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
                 <div class="widget">
                   <h4
                     class="widget-title mb-4"
@@ -551,7 +564,7 @@
               </div>
             </div>
             <p
-              class="col-12 col-md-4 col-lg-3 col-xl-6 mt-4"
+              class="col-sm-12 col-md-4 col-lg-3 col-xl-6 mt-4"
               style="font-size: 12px; color: white"
             >
               Copyright © 1993-2024 Altair Technology, Inc. All Rights Reserved.

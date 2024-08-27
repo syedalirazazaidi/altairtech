@@ -72,6 +72,62 @@
   z-index: 2; /* Ensure the banner content is above the overlay */
 }
 
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .container .card_css__proposal {
+    width: 300px;
+  }
+  .container {
+    max-width: 85% !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .slider-container {
+    width: 100%; /* Make the slider container full width on small screens */
+    max-width: 400px; /* Adjust to a smaller width for mobile view */
+  }
+  /* .slider-container {
+    width: 200px;
+  } */
+  .altairtech_group {
+    background-image: none; /* Hide the background image */
+  }
+  .navbar-brand img {
+    width: 200px; /* Adjust the image size for mobile screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .navbar-toggler {
+    margin: 0 auto; /* Center the toggle button */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    text-align: center; /* Center text in mobile view */
+  }
+
+  .navbar-nav {
+    width: 100%;
+    padding: 10px 0; /* Add some padding */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0; /* Remove margin to use space more efficiently */
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%; /* Make each nav link occupy full width */
+    padding: 10px 0; /* Add padding for better touch targets */
+  }
+}
+
+.card_css {
+  background-color: red;
+}
+
 .banner h1 {
   margin: 0;
   font-size: 3rem;
@@ -140,15 +196,43 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
 
+/* Default styles for larger screens */
 .slider-container {
   position: relative;
   overflow: hidden;
-  width: 750px; /* Same as the width in your HTML inline style */
+  width: 750px; /* Adjust as needed for larger screens */
 }
 
 .slider-wrapper {
   display: flex;
   transition: transform 1s ease-in-out;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 767.98px) {
+  /* Target devices smaller than 768px */
+  .slider-container {
+    width: 100%; /* Make the slider container full width */
+    overflow: hidden; /* Ensure no scrollbars appear */
+  }
+
+  .slider-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .circle_slider.active {
+    background-color: #007bff; /* Change to the desired highlight color */
+  }
+
+  .slider-item img {
+    width: 180px; /* Adjust as needed */
+    height: 140px;
+  }
+
+  .slider-item h4 {
+    font-size: 10px;
+  }
 }
 
 .slider-item {
@@ -212,7 +296,7 @@
 
 /* Highlighted circle */
 .circle.highlighted {
-  background-color: #007bff; 
-  border-color: #007bff; 
-  box-shadow: 0 0 5px #007bff; 
+  background-color: #007bff;
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
 }
