@@ -78,7 +78,8 @@
     width: 300px;
   }
   .container {
-    max-width: 85% !important;
+    max-width: 100% !important;
+    margin-top: 10;
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -233,7 +234,7 @@
   }
 }
 .custom-dropdown {
-  width: 350px; /* Adjust the width as needed */
+  width: 380px; /* Adjust the width as needed */
   border-radius: 0; /* Remove border-radius if you don't want rounded corners */
 }
 
