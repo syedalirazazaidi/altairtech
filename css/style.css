@@ -87,9 +87,7 @@
     width: 100%; /* Make the slider container full width on small screens */
     max-width: 400px; /* Adjust to a smaller width for mobile view */
   }
-  /* .slider-container {
-    width: 200px;
-  } */
+
   .altairtech_group {
     background-image: none; /* Hide the background image */
   }
@@ -233,6 +231,25 @@
   .slider-item h4 {
     font-size: 10px;
   }
+}
+.custom-dropdown {
+  width: 350px; /* Adjust the width as needed */
+  border-radius: 0; /* Remove border-radius if you don't want rounded corners */
+}
+
+.custom-dropdown .nav-link {
+  padding: 0px 5px;
+  color: black; /* Ensure the text color contrasts with the background */
+}
+
+.custom-dropdown .nav-link:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+  color: black; /* Maintain the text color on hover */
+}
+
+.dropdown-menu-end {
+  left: 0; /* Align the dropdown to the left side */
+  right: auto; /* Disable right alignment */
 }
 
 .slider-item {
