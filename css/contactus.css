@@ -10,7 +10,14 @@
 .container {
   max-width: 60% !important;
 }
+@media (max-width: 767px) {
+  /* Mobile-specific adjustments */
 
+  .container {
+    max-width: 100% !important;
+   
+  }
+}
 .navbar-banner-container {
   position: relative;
   background-image: url("../images/home/BootstrapsImages/HomePage/content-wrapper.jpg");

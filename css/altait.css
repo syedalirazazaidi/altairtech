@@ -31,6 +31,10 @@ h5 {
   .card {
     margin-bottom: 20px;
   }
+  .container {
+    max-width: 100% !important;
+   
+  }
 
   .col-xs-12 img {
     width: 100%;

@@ -17,7 +17,14 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  /* Mobile-specific adjustments */
 
+  .container {
+    max-width: 100% !important;
+   
+  }
+}
 .navbar-globe-container {
   position: relative;
   background-image: url("../images/home/BootstrapsImages/about/AboutGlobe.jpg");

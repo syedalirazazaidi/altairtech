@@ -20,6 +20,14 @@
 .footer__css {
   background-color: #1f1f1f;
 }
+@media (max-width: 767px) {
+  /* Mobile-specific adjustments */
+
+  .container {
+    max-width: 100% !important;
+   
+  }
+}
 
 @media (max-width: 768px) {
   .container {

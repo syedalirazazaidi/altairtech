@@ -51,6 +51,14 @@
   width: 200px;
   margin: 0; /* Remove default margin */
 }
+@media (max-width: 767px) {
+  /* Mobile-specific adjustments */
+
+  .container {
+    max-width: 100% !important;
+   
+  }
+}
 
 .content p {
   color: #0066cc;
