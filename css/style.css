@@ -234,12 +234,12 @@
   }
 }
 .custom-dropdown {
-  width: 380px; /* Adjust the width as needed */
+  width: 360px; /* Adjust the width as needed */
   border-radius: 0; /* Remove border-radius if you don't want rounded corners */
 }
 
 .custom-dropdown .nav-link {
-  padding: 0px 5px;
+  padding: 0px 10px;
   color: black; /* Ensure the text color contrasts with the background */
 }
 
@@ -317,4 +317,35 @@
   background-color: #007bff;
   border-color: #007bff;
   box-shadow: 0 0 5px #007bff;
+}
+
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+  .footer .widget {
+    margin-bottom: 10px; /* Reduce space between widgets */
+  }
+
+  .footer .widget-title {
+    font-size: 16px; /* Smaller font size for widget titles */
+    margin-bottom: 8px; /* Reduce space below titles */
+  }
+
+  .footer p {
+    margin-bottom: 5px; /* Reduce space between paragraphs */
+    font-size: 11px; /* Smaller font size for paragraph text */
+  }
+
+  .footer .container {
+    padding: 10px 15px; /* Reduce container padding */
+  }
+
+  .footer .row > div {
+    margin-bottom: 15px; /* Reduce space between columns */
+  }
+
+  .footer .col-12.col-md-4.col-lg-12.col-xl-6 {
+    order: -1; /* Bring the testimonial section to the top */
+    margin-bottom: 20px;
+  }
 }
